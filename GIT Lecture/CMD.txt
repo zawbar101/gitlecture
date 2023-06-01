@@ -1,0 +1,86 @@
+$ cd d:           its means go to d drive
+$ dir             means chk all files
+$ mkdir           hamzagit    make folder
+$ cd hamzagit     go to folder
+
+
+set username global or local
+$git config --global user.name "hamza shareef"              set user name globaly  do not set every time  
+$git config --global user.name "muhammad hamza shareef"    rename your user name 
+$git config --global user.name                             check username 
+$git config  user.name "hamzashareef"                      set user name for each folder do net set every time 
+
+
+set useremail global or local
+$git config --global user.email "hamzashareef@gmail.com"              set user email globaly  do not set every time  
+$git config --global user.email "muhammad hamza shareef"             rename your user email
+$git config --global user.email                                       check useremail 
+$git config  user.email "hamzashareef"                                 set useremail for each folder do net set every time 
+
+
+clear   clear all commands
+touch  index.html   make file 
+
+
+$ git status      chk file its is initialized or not
+$ git init        file initialized with git
+
+
+git add index.html  add file in staging area
+
+and then modify your index file and chk status
+
+$ git add .            second time you don't need to write file name
+
+then ckeck status
+
+then commit
+
+$ git commit -m 'first commit, index file added'
+
+
+$ git log   check id of commit
+
+$ git log --oneline
+  
+$ git log --oneline -3  starting three commit show   
+
+$ git remote add origin   https://github.com/hamzasharef/firstpro.git                           //here origin is represent a links you can also write abc is a link name
+
+$ git remote                                                                                      //here you can check its remote or not
+  
+$ git remote -v                                                                                         //here you can check version
+
+$ git push -u origin master                            //here u is a tracking  
+
+//edit file & add github
+$ notepad index.html
+$ git status
+git add .
+git commt -m 
+git push -u origin master
+
+
+      /////BRANCH OF GIT ////MEANS COPY OF PROJECT///
+git branch localhamza    //create branch
+git branch               //check branch
+git checkout localhamza   //changebranch
+$ notepad index.html
+$ cat index.html          //check file data
+$ git status
+git add .
+git commt -m 
+git push -u origin localhamza
+git checkout master             //go back to master branch and check file 
+cat index.html                 //here you can see no change in master
+git merge localhamza         //here you can merge localay 
+git push -u origin master 
+
+
+
+/////What is Clone in Git////
+GIT CLONE IS USED TO CREATE A LOCAL COPY OF A REMOTE REPOSITORY
+$ cd d:
+$ mkdir cloneworking
+$ git clone https://github.com/hamzasharef/hamzagitpractice.git
+$ cd foldername       to get remote repo 
